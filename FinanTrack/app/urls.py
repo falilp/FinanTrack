@@ -19,6 +19,5 @@ from django.urls import path, include
 from app.views import index
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("FinanTrack/", include("myapp.urls")),
+    path('', index, name='index'),
 ]
